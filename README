@@ -1,0 +1,74 @@
+Electronics Store
+
+Technologies: Core Java, Servlets, JSP, JDBC, HTML, CSS
+Database: Oracle
+Server: Apache Tomcat (WAR / external servlet container)
+
+Overview
+
+Electronics Store is a simple e-commerce web application with two modules:
+
+Admin module
+
+Admin login
+
+Add product
+
+View / Edit / Delete products
+
+Logout
+
+Customer module
+
+Customer registration and login
+
+Browse / View products
+
+Purchase products (order flow)
+
+Logout
+
+The project uses plain JDBC to connect to an Oracle database and is packaged as a WAR for deployment on Tomcat.
+
+Tech stack
+
+Java 11+ / Java 17
+
+JSP, Servlet API
+
+JDBC (Oracle)
+
+Maven (build)
+
+Apache Tomcat 9/10
+
+HTML, CSS
+
+Repository structure
+electronics-store/
+├─ src/
+│  ├─ main/
+│  │  ├─ java/                # com.yourorg.* servlets, DAOs, models
+│  │  └─ webapp/
+│  │     ├─ WEB-INF/
+│  │     │  ├─ web.xml
+│  │     │  └─ lib/           # optional: place JDBC jar when packaging
+│  │     └─ views/            # JSPs (login.jsp, products.jsp, admin/*)
+├─ db/
+│  ├─ schema.sql
+│  └─ seed.sql
+├─ pom.xml
+├─ README.md
+└─ .gitignore
+
+Requirements
+
+JDK 11 or later (Java 17 recommended)
+
+Maven
+
+Apache Tomcat 9 or 10
+
+Oracle DB (local or remote)
+
+Oracle JDBC driver (ojdbc8.jar / ojdbc11.jar) — not included in repo
