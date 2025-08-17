@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Admin Login</title>
+<style>
+  body {
+  background: #f2f2f2;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.center-box {
+  width: 300px;
+  margin: 120px auto;
+  padding: 30px;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+input[type="text"], input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  margin-top: 20px;
+  width: 100%;
+  background: #1d3557;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+input[type="submit"]:hover {
+  background: #457b9d;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}
+
+</style>
+
+</head>
+<body><center>
+			<h1>
+			<u>ADMIN LOGIN</u><br><br>
+				<form action="alog" method="post">
+				UserName<input type="text" name="aname"></br></br>
+				Password<input type="password" name="apwd"></br></br>
+				<input type="submit" value="Login"></br></br>
+				</form>
+			
+			</h1>
+
+
+</center>
+
+</body>
+</html>
